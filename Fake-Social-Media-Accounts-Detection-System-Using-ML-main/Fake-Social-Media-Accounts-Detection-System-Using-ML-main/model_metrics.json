@@ -1,0 +1,120 @@
+{
+  "trained_at": "2026-10-29T07:35:16.354971+00:00",
+  "dataset_sha256": "2f3551c0a49c796c1f5b826a0a09ab3be4b2ffd4db5a7c85c8295e3733736207",
+  "sklearn_version": "1.9.1",
+  "rows": 692,
+  "duplicates_removed": 4,
+  "train_rows": 484,
+  "test_rows": 208,
+  "genuine": 347,
+  "fake": 345,
+  "features": [
+    "profile pic",
+    "nums/length username",
+    "fullname words",
+    "nums/length fullname",
+    "name==username",
+    "description length",
+    "external URL",
+    "private",
+    "#posts",
+    "#followers",
+    "#follows"
+  ],
+  "models": {
+    "Random Forest": {
+      "accuracy": 0.9375,
+      "precision": 0.9504950495049505,
+      "recall": 0.9230769230769231,
+      "f1": 0.9365853658536586,
+      "confusion": [
+        [
+          99,
+          5
+        ],
+        [
+          8,
+          96
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 0.9086538461538461,
+      "precision": 0.9047619047619048,
+      "recall": 0.9134615384615384,
+      "f1": 0.9090909090909091,
+      "confusion": [
+        [
+          94,
+          10
+        ],
+        [
+          9,
+          95
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 0.9134615384615384,
+      "precision": 0.967391304347826,
+      "recall": 0.8557692307692307,
+      "f1": 0.9081632653061225,
+      "confusion": [
+        [
+          101,
+          3
+        ],
+        [
+          15,
+          89
+        ]
+      ]
+    }
+  },
+  "importance": [
+    [
+      "#posts",
+      0.25867905938541547
+    ],
+    [
+      "#followers",
+      0.2482445853708587
+    ],
+    [
+      "nums/length username",
+      0.13379993154900907
+    ],
+    [
+      "#follows",
+      0.09439610263860602
+    ],
+    [
+      "description length",
+      0.09172566300297547
+    ],
+    [
+      "profile pic",
+      0.09153028722412358
+    ],
+    [
+      "fullname words",
+      0.05156640139452219
+    ],
+    [
+      "private",
+      0.011350833541677742
+    ],
+    [
+      "nums/length fullname",
+      0.01030640308258497
+    ],
+    [
+      "external URL",
+      0.0068496444880309605
+    ],
+    [
+      "name==username",
+      0.001551088322195958
+    ]
+  ]
+}
